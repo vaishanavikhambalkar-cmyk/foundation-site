@@ -14,8 +14,8 @@ export default function AdminLogin() {
     e.preventDefault()
 
     // Change these credentials
-    const adminEmail = "admin@ojalfoundation.com"
-    const adminPassword = "123456"
+    const adminEmail = "ojalmicroservicefoundation.obs@gmail.com"
+    const adminPassword = "ojal@4848"
 
     if (email === adminEmail && password === adminPassword) {
       localStorage.setItem("isAdmin", "true")

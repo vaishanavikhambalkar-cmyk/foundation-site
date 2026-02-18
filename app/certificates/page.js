@@ -23,7 +23,7 @@ export default function Certificates() {
       image: "cert4.jpg",
     },
     {
-      title: "US Certificate",
+      title: "ISO Certificate",
       image: "cert5.jpg",
     },
     {
