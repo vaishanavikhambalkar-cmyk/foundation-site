@@ -15,7 +15,7 @@ export default function AdminLogin() {
 
     // Change these credentials
     const adminEmail = "ojalmicroservicefoundation.obs@gmail.com"
-    const adminPassword = "ojal@4848"
+    const adminPassword = "Ojal@2023"
 
     if (email === adminEmail && password === adminPassword) {
       localStorage.setItem("isAdmin", "true")
