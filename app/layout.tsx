@@ -17,6 +17,8 @@ export default function RootLayout({
           <div className="container header-wrapper">
 
             
+
+            
 <div className="logo-section" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
   <img
     src="logo.jpg"
@@ -42,6 +44,9 @@ export default function RootLayout({
             <nav className="nav-links">
               <Link href="/">Home</Link>
               <Link href="/about">About</Link>
+              <Link href="/women-entrepreneurship">
+  Women Entrepreneurship
+</Link>
               <Link href="/gallery">Gallery</Link>
               <Link href="/certificates">Certificates</Link>
               <Link href="/volunteer">Volunteer</Link>
