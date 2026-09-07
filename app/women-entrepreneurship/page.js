@@ -53,7 +53,7 @@ export default function WomenEntrepreneurshipPage() {
 
   const translations = {
     mr: {
-      title: "जिजामाता ऐकल महिला उद्योजक उजाण",
+      title: "जिजामाता ऐकल महिला उद्योजक योजना ",
       subtitle:
         "महिलांना व्यवसायाच्या माध्यमातून सक्षम करण्याचा फाउंडेशनचा उपक्रम",
 
@@ -62,7 +62,7 @@ export default function WomenEntrepreneurshipPage() {
       programInfo: "कार्यक्रमाची माहिती",
 
       programText:
-        "जिजामाता ऐकल महिला उद्योजक उजाण हा महिलांना स्वतःचा व्यवसाय सुरू करण्यासाठी किंवा विद्यमान व्यवसाय वाढवण्यासाठी फाउंडेशनकडून सहाय्य व मार्गदर्शन देणारा उपक्रम आहे.",
+        "जिजामाता ऐकल महिला उद्योजक योजना हा महिलांना स्वतःचा व्यवसाय सुरू करण्यासाठी किंवा विद्यमान व्यवसाय वाढवण्यासाठी फाउंडेशनकडून सहाय्य व मार्गदर्शन देणारा उपक्रम आहे.",
 
       membership:
         "या कार्यक्रमात सहभागी होण्यासाठी ₹1,500 फाउंडेशन सदस्यत्व आवश्यक आहे. अर्ज सादरल्यानंतर फाउंडेशनची टीम सदस्यत्व शुल्क भरल्याची पडताळणी करेल.",
@@ -177,7 +177,7 @@ export default function WomenEntrepreneurshipPage() {
     },
 
     hi: {
-      title: "जिजामाता ऐकल महिला उद्योजक उजाण",
+      title: "जिजामाता ऐकल महिला उद्यमी योजना ",
 
       subtitle:
         "महिलाओं को व्यवसाय के माध्यम से सक्षम बनाने की फाउंडेशन की पहल",
@@ -187,7 +187,7 @@ export default function WomenEntrepreneurshipPage() {
       programInfo: "कार्यक्रम की जानकारी",
 
       programText:
-        "जिजामाता ऐकल महिला उद्योजक उजाण महिलाओं को अपना व्यवसाय शुरू करने या मौजूदा व्यवसाय को बढ़ाने के लिए फाउंडेशन द्वारा सहायता और मार्गदर्शन देने की पहल है।",
+        "जिजामाता ऐकल महिला उद्यमी योजना महिलाओं को अपना व्यवसाय शुरू करने या मौजूदा व्यवसाय को बढ़ाने के लिए फाउंडेशन द्वारा सहायता और मार्गदर्शन देने की पहल है।",
 
       membership:
         "इस कार्यक्रम में भाग लेने के लिए ₹1,500 फाउंडेशन सदस्यता आवश्यक है। आवेदन जमा करने के बाद फाउंडेशन टीम सदस्यता शुल्क भुगतान की पुष्टि करेगी।",
@@ -304,7 +304,7 @@ export default function WomenEntrepreneurshipPage() {
 
     en: {
       title:
-        "Jijamata Aikl Mahila Udyojak Ujana",
+        "Jijamata Aikl Women Entrepreneur Yojana",
 
       subtitle:
         "A foundation initiative to empower women through entrepreneurship",
@@ -314,7 +314,7 @@ export default function WomenEntrepreneurshipPage() {
       programInfo: "Program Information",
 
       programText:
-        "Jijamata Aikl Mahila Udyojak Ujana is a foundation initiative that provides support and guidance to women who want to start a new business or grow an existing business.",
+        "Jijamata Aikl Mahila Udyojak yojana is a foundation initiative that provides support and guidance to women who want to start a new business or grow an existing business.",
 
       membership:
         "A ₹1,500 foundation membership is required to participate in this program. Our foundation team will verify your membership payment after application submission.",
@@ -540,7 +540,7 @@ export default function WomenEntrepreneurshipPage() {
       heading: "Applicant Affidavit",
 
       program:
-        "Jijamata Aikl Mahila Udyojak Ujana",
+        "Jijamata Aikl Mahila Udyojak yojana",
 
       declaration:
         `I, ${form.name}, hereby declare that all information provided in this application is true and accurate to the best of my knowledge. I have not hidden any important information.`,
