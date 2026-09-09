@@ -32,27 +32,19 @@ export default function Volunteer() {
     setLoading(true)
 
     try {
-      const volunteerData = {
-        name: formData.name.trim(),
-        email: formData.email.trim(),
-        phone: formData.phone.trim(),
-        skills: formData.skills.trim(),
-        message: formData.message.trim(),
-        address: formData.address.trim(),
-      }
-
-      console.log("Sending:", volunteerData)
-
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from("volunteer")
-        .insert(volunteerData)
-        .select()
-
-      console.log("Supabase data:", data)
-      console.log("Supabase error:", error)
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          skills: formData.skills,
+          message: formData.message,
+          address: formData.address,
+        })
 
       if (error) {
-        console.error("FULL SUPABASE ERROR:", error)
+        console.error("Supabase Error:", error)
         alert(`Error: ${error.message}`)
         return
       }
@@ -67,8 +59,8 @@ export default function Volunteer() {
         message: "",
         address: "",
       })
-    } catch (err) {
-      console.error("Unexpected error:", err)
+    } catch (error) {
+      console.error("Unexpected Error:", error)
       alert("Something went wrong ❌")
     } finally {
       setLoading(false)
@@ -79,16 +71,19 @@ export default function Volunteer() {
     <section style={sectionStyle}>
       <div style={containerStyle}>
 
-        <h2 style={titleStyle}>Become a Volunteer</h2>
+        <h2 style={titleStyle}>
+          Become a Volunteer
+        </h2>
 
         <p style={subtitleStyle}>
-          Use your skills to support financially struggling families and
-          empower communities.
+          Use your skills to support financially struggling families
+          and empower communities.
         </p>
 
         <form onSubmit={handleSubmit} style={formStyle}>
 
           <input
+            type="text"
             name="name"
             placeholder="Full Name"
             value={formData.name}
@@ -117,6 +112,7 @@ export default function Volunteer() {
           />
 
           <input
+            type="text"
             name="skills"
             placeholder="Your Skills (Teaching, Fundraising, IT, etc.)"
             value={formData.skills}
@@ -143,7 +139,10 @@ export default function Volunteer() {
           <button
             type="submit"
             disabled={loading}
-            style={buttonStyle}
+            style={{
+              ...buttonStyle,
+              opacity: loading ? 0.7 : 1,
+            }}
           >
             {loading ? "Submitting..." : "Join as Volunteer"}
           </button>
@@ -153,6 +152,8 @@ export default function Volunteer() {
     </section>
   )
 }
+
+/* ---------- STYLES ---------- */
 
 const sectionStyle = {
   backgroundColor: "#f5f8ff",
@@ -180,6 +181,7 @@ const subtitleStyle = {
   textAlign: "center",
   marginBottom: "30px",
   color: "#0d1b4c",
+  lineHeight: "1.6",
 }
 
 const formStyle = {
@@ -193,12 +195,14 @@ const inputStyle = {
   borderRadius: "8px",
   border: "1px solid #ddd",
   fontSize: "14px",
+  outline: "none",
 }
 
 const textareaStyle = {
   ...inputStyle,
   minHeight: "100px",
   resize: "vertical",
+  fontFamily: "inherit",
 }
 
 const buttonStyle = {
@@ -209,4 +213,5 @@ const buttonStyle = {
   borderRadius: "8px",
   fontWeight: "bold",
   cursor: "pointer",
+  fontSize: "15px",
 }
